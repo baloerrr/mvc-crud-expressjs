@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/5
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Muhammad Akbar Adityah",
+    "nim": "062230701455",
+    "jurusan": "Teknik Komputer",
+    "prodi": "D3 Teknik Komputer"
+}
+
+###
+PUT http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "Muhammad Akbar Adityah",
+    "nim": "062230701455",
+    "jurusan": "Ilmu Komputer",
+    "prodi": "D3 Teknik Informatika"
+}  
+
+###
+DELETE http://localhost:5000/users/1
